@@ -39,3 +39,19 @@ with sync_playwright() as p:
 
 
     browser.close()
+
+# with page.expect_download() as dl_info:
+#     telecharger.nth(i).click()
+
+# download = dl_info.value
+
+# # Wait until it's finished and get the temp file path
+# tmp_path = download.path()          # pathlib.Path
+# data = tmp_path.read_bytes()        # bytes in memory
+
+# print(download.suggested_filename, len(data))
+
+# import io
+
+# buf = io.BytesIO(data)  # behaves like a file opened in binary mode
+# df = pd.read_csv(io.BytesIO(data))
